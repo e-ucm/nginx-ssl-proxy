@@ -12,7 +12,11 @@
 4. Change the configuration in `vars`. Sample values follow:
 
     ```
-    # this line was completely broken in the template
+    # 
+    # The original version, found in the default-created "vars" file,
+    # errored out and resulted in an empty KEY_CONFIG on our system:
+    #   export KEY_CONFIG=`$EASY_RSA/whichopensslcnf $EASY_RSA`
+    #
     export KEY_CONFIG="$EASY_RSA/openssl-1.0.0.cnf
 
     # ...
